@@ -17,4 +17,8 @@ public class LenguajesServicio {
 	public List<Lenguaje> todosLenguajes(){
 		return lenguajesRepositorio.findAll();
 	}
+	
+	public Lenguaje crearLenguaje(Lenguaje leng) {
+		return lenguajesRepositorio.save(leng);
+	}
 }

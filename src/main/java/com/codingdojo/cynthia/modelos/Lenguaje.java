@@ -10,7 +10,7 @@ import javax.persistence.Id;
 import javax.persistence.PrePersist;
 import javax.persistence.PreUpdate;
 import javax.persistence.Table;
-import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import org.springframework.format.annotation.DateTimeFormat;
@@ -29,7 +29,7 @@ public class Lenguaje {
 	@Size(min=2, max=20)
 	private String creador;
 	
-	@NotEmpty
+	@NotNull
 	private Float version;
 	
 	@Column(updatable=false)

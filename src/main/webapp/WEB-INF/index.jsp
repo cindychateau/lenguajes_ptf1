@@ -25,7 +25,7 @@
 					<td>${lenguaje.creador}</td>
 					<td>${lenguaje.version}</td>
 					<td>
-						<a href="/borrar">Borrar</a>
+						<a href="/borrar">Borrar</a> | 
 						<a href="/editar">Editar</a>
 					</td>
 				</tr>
