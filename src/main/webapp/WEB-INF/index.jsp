@@ -5,10 +5,11 @@
 <html>
 <head>
 <meta charset="ISO-8859-1">
-<title>Insert title here</title>
+<title>Lenguajes</title>
 </head>
 <body>
 	<h1>Bienvenidos a Lenguajes punto com!</h1>
+	<a href="/nuevo">Agregar nuevo lenguaje</a>
 	<table>
 		<thead>
 			<tr>
@@ -21,7 +22,7 @@
 		<tbody>
 			<c:forEach items="${lenguajes}" var="lenguaje">
 				<tr>
-					<td>${lenguaje.nombre}</td>
+					<td><a href="/${lenguaje.id}">${lenguaje.nombre}</a></td>
 					<td>${lenguaje.creador}</td>
 					<td>${lenguaje.version}</td>
 					<td>

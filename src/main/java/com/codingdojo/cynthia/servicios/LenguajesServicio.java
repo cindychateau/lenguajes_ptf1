@@ -21,4 +21,8 @@ public class LenguajesServicio {
 	public Lenguaje crearLenguaje(Lenguaje leng) {
 		return lenguajesRepositorio.save(leng);
 	}
+	
+	public Lenguaje buscarLenguaje(Long id) {
+		return lenguajesRepositorio.findById(id).orElse(null);
+	}
 }
