@@ -26,8 +26,11 @@
 					<td>${lenguaje.creador}</td>
 					<td>${lenguaje.version}</td>
 					<td>
-						<a href="/borrar">Borrar</a> | 
-						<a href="/editar">Editar</a>
+						<form action="/${lenguaje.id}/borrar" method="post">
+							<input type="hidden" name="_method" value="delete">
+							<input type="submit" value="Borrar">
+						</form> | 
+						<a href="/${lenguaje.id}/editar">Editar</a>
 					</td>
 				</tr>
 			</c:forEach>

@@ -12,6 +12,6 @@
 	<h2><c:out value="${lenguaje.nombre}" /></h2>
 	<p>Creador: <c:out value="${ lenguaje.creador }"/> </p>
 	<p>Version: <c:out value="${ lenguaje.version }"/> </p>
-	
+	<a href="/${lenguaje.id}/editar">Editar lenguaje</a>
 </body>
 </html>

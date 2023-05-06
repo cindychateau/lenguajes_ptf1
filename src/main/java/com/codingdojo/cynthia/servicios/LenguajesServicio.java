@@ -25,4 +25,12 @@ public class LenguajesServicio {
 	public Lenguaje buscarLenguaje(Long id) {
 		return lenguajesRepositorio.findById(id).orElse(null);
 	}
+	
+	public Lenguaje actualizarLenguaje(Lenguaje leng) {
+		return lenguajesRepositorio.save(leng);
+	}
+	
+	public void borrarLenguaje(Long id) {
+		lenguajesRepositorio.deleteById(id);
+	}
 }
